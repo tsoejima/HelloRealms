@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B2BFE315DDD8D43CC5D2023 /* Pods_HelloRealms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD2E316684917430D022F63 /* Pods_HelloRealms.framework */; };
 		DF36A14125BCF02000835127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36A14025BCF02000835127 /* AppDelegate.swift */; };
 		DF36A14325BCF02000835127 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36A14225BCF02000835127 /* SceneDelegate.swift */; };
 		DF36A14525BCF02000835127 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36A14425BCF02000835127 /* ViewController.swift */; };
 		DF36A14825BCF02000835127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF36A14625BCF02000835127 /* Main.storyboard */; };
 		DF36A14A25BCF02100835127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF36A14925BCF02100835127 /* Assets.xcassets */; };
 		DF36A14D25BCF02100835127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF36A14B25BCF02100835127 /* LaunchScreen.storyboard */; };
+		DF36A15D25BCF5C900835127 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36A15C25BCF5C900835127 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E573B3591EB427E442FA32C /* Pods-HelloRealms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloRealms.release.xcconfig"; path = "Target Support Files/Pods-HelloRealms/Pods-HelloRealms.release.xcconfig"; sourceTree = "<group>"; };
+		5E2BECD504E41B5442FB90C8 /* Pods-HelloRealms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloRealms.debug.xcconfig"; path = "Target Support Files/Pods-HelloRealms/Pods-HelloRealms.debug.xcconfig"; sourceTree = "<group>"; };
+		CFD2E316684917430D022F63 /* Pods_HelloRealms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloRealms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF36A13D25BCF02000835127 /* HelloRealms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloRealms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF36A14025BCF02000835127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF36A14225BCF02000835127 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		DF36A14925BCF02100835127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF36A14C25BCF02100835127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF36A14E25BCF02100835127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF36A15C25BCF5C900835127 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B2BFE315DDD8D43CC5D2023 /* Pods_HelloRealms.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		470E8F6B6BB622A89C96F011 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2E316684917430D022F63 /* Pods_HelloRealms.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF36A13425BCF02000835127 = {
 			isa = PBXGroup;
 			children = (
 				DF36A13F25BCF02000835127 /* HelloRealms */,
 				DF36A13E25BCF02000835127 /* Products */,
+				DFEC47F2B59CEDC469BB36E9 /* Pods */,
+				470E8F6B6BB622A89C96F011 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +77,21 @@
 				DF36A14225BCF02000835127 /* SceneDelegate.swift */,
 				DF36A14425BCF02000835127 /* ViewController.swift */,
 				DF36A14625BCF02000835127 /* Main.storyboard */,
+				DF36A15C25BCF5C900835127 /* User.swift */,
 				DF36A14925BCF02100835127 /* Assets.xcassets */,
 				DF36A14B25BCF02100835127 /* LaunchScreen.storyboard */,
 				DF36A14E25BCF02100835127 /* Info.plist */,
 			);
 			path = HelloRealms;
+			sourceTree = "<group>";
+		};
+		DFEC47F2B59CEDC469BB36E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E2BECD504E41B5442FB90C8 /* Pods-HelloRealms.debug.xcconfig */,
+				2E573B3591EB427E442FA32C /* Pods-HelloRealms.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF36A15125BCF02100835127 /* Build configuration list for PBXNativeTarget "HelloRealms" */;
 			buildPhases = (
+				9F97E82A5BDA729ED7F67D2B /* [CP] Check Pods Manifest.lock */,
 				DF36A13925BCF02000835127 /* Sources */,
 				DF36A13A25BCF02000835127 /* Frameworks */,
 				DF36A13B25BCF02000835127 /* Resources */,
+				DA043C252525670F645A06AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +161,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9F97E82A5BDA729ED7F67D2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloRealms-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA043C252525670F645A06AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloRealms/Pods-HelloRealms-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloRealms/Pods-HelloRealms-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloRealms/Pods-HelloRealms-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF36A13925BCF02000835127 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF36A15D25BCF5C900835127 /* User.swift in Sources */,
 				DF36A14525BCF02000835127 /* ViewController.swift in Sources */,
 				DF36A14125BCF02000835127 /* AppDelegate.swift in Sources */,
 				DF36A14325BCF02000835127 /* SceneDelegate.swift in Sources */,
@@ -283,6 +355,7 @@
 		};
 		DF36A15225BCF02100835127 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E2BECD504E41B5442FB90C8 /* Pods-HelloRealms.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		DF36A15325BCF02100835127 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E573B3591EB427E442FA32C /* Pods-HelloRealms.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
